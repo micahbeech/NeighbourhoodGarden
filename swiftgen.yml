@@ -1,0 +1,21 @@
+strings:
+  inputs: ./NeighbourhoodGardener/Resources/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: ./NeighbourhoodGardener/Generated/Strings.swift
+
+xcassets:
+  - inputs: ./NeighbourhoodGardener/Resources/Images.xcassets
+    outputs:
+      - templatePath: ./SwiftgenTemplates/swift5-swiftui
+        output: ./NeighbourhoodGardener/Generated/Images.swift
+        params:
+          type: Image
+          
+  - inputs: ./NeighbourhoodGardener/Resources/Colors.xcassets
+    outputs:
+      - templatePath: ./SwiftgenTemplates/swift5-swiftui
+        output: ./NeighbourhoodGardener/Generated/Colors.swift
+        params:
+          type: Color
+          allValues: true

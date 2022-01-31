@@ -1,0 +1,18 @@
+/* 
+  NeighbourhoodGardener.strings
+  NeighbourhoodGardener
+
+  Created by Micah Beech on 2022-01-30.
+  
+*/
+
+// MARK: Tabs
+
+"TAB.HOME" = "Home";
+"TAB.LISTINGS" = "My Garden";
+"TAB.ACCOUNT" = "Account";
+
+// MARK: Produce
+
+// Indicates the name of the seller of a product.
+"PRODUCE.SOLD_BY" = "for sale by %@";

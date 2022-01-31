@@ -1,0 +1,39 @@
+// swiftlint:disable all
+// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+
+{% if catalogs %}
+{% set type %}{% if param.dataType %}public{% else %}internal{% endif %}{% endset %}
+{% set accessModifier %}{% if param.publicAccess %}public{% else %}internal{% endif %}{% endset %}
+
+import SwiftUI
+
+// swiftlint:disable superfluous_disable_command file_length implicit_return
+
+// MARK: - Asset Catalogs
+
+// swiftlint:disable identifier_name line_length nesting type_body_length type_name
+{{accessModifier}} extension {{param.type}} {
+  {% for asset in catalogs.first.assets %}
+  static let garden{{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|capitalize|escapeReservedKeywords}} = {{param.type}}("{{asset.value}}", bundle: BundleToken.bundle)
+  {% endfor %}
+}
+// swiftlint:enable identifier_name line_length nesting type_body_length type_name
+
+// MARK: - Implementation Details
+
+{% if not param.bundle %}
+// swiftlint:disable convenience_type
+private final class BundleToken {
+  static let bundle: Bundle = {
+    #if SWIFT_PACKAGE
+    return Bundle.module
+    #else
+    return Bundle(for: BundleToken.self)
+    #endif
+  }()
+}
+// swiftlint:enable convenience_type
+{% endif %}
+{% else %}
+// No assets found
+{% endif %}
