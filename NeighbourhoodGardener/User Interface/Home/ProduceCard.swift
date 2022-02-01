@@ -32,7 +32,7 @@ struct ProduceCard: View {
             ))
                 .padding(.screenEdge)
         }
-        .frame(height: 140)
+        .frame(height: 180)
     }
 }
 

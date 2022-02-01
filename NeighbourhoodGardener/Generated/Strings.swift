@@ -11,6 +11,11 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
+  internal enum Home {
+    /// My Neighbourhood Garden
+    internal static let header = L10n.tr("NeighbourhoodGardener", "HOME.HEADER")
+  }
+
   internal enum Produce {
     /// for sale by %@
     internal static func soldBy(_ p1: Any) -> String {

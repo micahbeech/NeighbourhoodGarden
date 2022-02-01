@@ -9,8 +9,8 @@ import SwiftUI
 // MARK: - Asset Catalogs
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
-internal extension Image {
-  static let gardenLettuce = Image("Lettuce", bundle: BundleToken.bundle)
+internal enum GardenIcon {
+  static let lettuce = Image("Lettuce", bundle: BundleToken.bundle)
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

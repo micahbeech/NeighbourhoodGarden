@@ -22,13 +22,14 @@ struct ProduceView: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: .extraSmall) {
-            GardenImage(imageUrl: viewModel.imageUrl)
+            GardenImage(imageUrl: viewModel.imageUrl, size: 100)
 
             VStack(alignment: .leading, spacing: .extraSmall) {
                 HStack {
                     Text(viewModel.name)
                         .primaryStyle()
-                        .lineLimit(1)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
 
                     Spacer()
 

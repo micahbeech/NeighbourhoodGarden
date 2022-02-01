@@ -9,6 +9,10 @@ import SwiftUI
 
 extension Font {
     static func avenirMedium(_ size: CGFloat) -> Font {
-        return .custom("AvenirNext-Medium", size: size)
+        .custom("AvenirNext-Medium", size: size)
+    }
+
+    static func avenirDemiBold(_ size: CGFloat) -> Font {
+        .custom("AvenirNext-DemiBold", size: size)
     }
 }

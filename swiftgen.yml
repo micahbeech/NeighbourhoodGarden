@@ -11,6 +11,7 @@ xcassets:
         output: ./NeighbourhoodGardener/Generated/Images.swift
         params:
           type: Image
+          enumName: GardenIcon
           
   - inputs: ./NeighbourhoodGardener/Resources/Colors.xcassets
     outputs:
@@ -18,4 +19,11 @@ xcassets:
         output: ./NeighbourhoodGardener/Generated/Colors.swift
         params:
           type: Color
-          allValues: true
+          prefix: garden
+          
+  - inputs: ./NeighbourhoodGardener/Preview Content/Preview Assets.xcassets
+    outputs:
+      - templateName: swift5
+        output: ./NeighbourhoodGardener/Generated/Previews.swift
+        params:
+          enumName: PreviewData

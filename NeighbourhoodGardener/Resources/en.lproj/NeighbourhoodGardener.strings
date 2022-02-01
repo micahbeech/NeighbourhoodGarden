@@ -8,11 +8,19 @@
 
 // MARK: Tabs
 
+/// Title of the home tab
 "TAB.HOME" = "Home";
+/// Title of the user's product listings tab
 "TAB.LISTINGS" = "My Garden";
+/// Title of the user's account tab
 "TAB.ACCOUNT" = "Account";
 
 // MARK: Produce
 
 // Indicates the name of the seller of a product.
 "PRODUCE.SOLD_BY" = "for sale by %@";
+
+// MARK: Home
+
+/// App title
+"HOME.HEADER" = "My Neighbourhood Garden";

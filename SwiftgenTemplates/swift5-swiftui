@@ -2,7 +2,6 @@
 // Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
 
 {% if catalogs %}
-{% set type %}{% if param.dataType %}public{% else %}internal{% endif %}{% endset %}
 {% set accessModifier %}{% if param.publicAccess %}public{% else %}internal{% endif %}{% endset %}
 
 import SwiftUI
@@ -12,11 +11,19 @@ import SwiftUI
 // MARK: - Asset Catalogs
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
-{{accessModifier}} extension {{param.type}} {
+{% if param.enumName %}
+{{accessModifier}} enum {{param.enumName}} {
   {% for asset in catalogs.first.assets %}
-  static let garden{{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|capitalize|escapeReservedKeywords}} = {{param.type}}("{{asset.value}}", bundle: BundleToken.bundle)
+  static let {{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = {{param.type}}("{{asset.value}}", bundle: BundleToken.bundle)
   {% endfor %}
 }
+{% else %}
+{{accessModifier}} extension {{param.type}} {
+  {% for asset in catalogs.first.assets %}
+  static let {{param.prefix}}{{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|capitalize|escapeReservedKeywords}} = {{param.type}}("{{asset.value}}", bundle: BundleToken.bundle)
+  {% endfor %}
+}
+{% endif %}
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
 // MARK: - Implementation Details
