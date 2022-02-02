@@ -15,21 +15,14 @@ struct GardenImage: View {
 
     var body: some View {
         // FIX ME: Temporary Implementation
-        if let size = size {
-            GardenIcon.lettuce
-                    .resizable()
-                    .frame(width: size, height: size)
-                    .clipShape(
-                        RoundedRectangle(cornerRadius: .cornerRadius)
-                    )
-        } else {
-            GardenIcon.lettuce // FIX ME
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(
-                        RoundedRectangle(cornerRadius: .cornerRadius)
-                    )
-        }
+        GardenIcon.lettuce
+                .resizable()
+                .if(size == nil) {
+                    $0.scaledToFit()
+                } else: {
+                    $0.frame(width: size, height: size)
+                }
+                .clipShape(RoundedRectangle(cornerRadius: .cornerRadius))
     }
 }
 

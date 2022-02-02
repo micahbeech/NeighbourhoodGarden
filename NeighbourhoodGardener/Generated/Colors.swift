@@ -11,6 +11,7 @@ import SwiftUI
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal extension Color {
   static let gardenBackground = Color("background", bundle: BundleToken.bundle)
+  static let gardenDivider = Color("divider", bundle: BundleToken.bundle)
   static let gardenPrimarylabel = Color("primaryLabel", bundle: BundleToken.bundle)
   static let gardenSecondarylabel = Color("secondaryLabel", bundle: BundleToken.bundle)
   static let gardenShadow = Color("shadow", bundle: BundleToken.bundle)

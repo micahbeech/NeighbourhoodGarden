@@ -7,11 +7,35 @@
 
 import SwiftUI
 
+// MARK: View
+
 struct ListingsTab: View {
     var body: some View {
-        Text("I am the listings tab")
+        VStack(spacing: 0) {
+            Text("Hello, Name")
+                .titleStyle()
+
+            GardenDivider(weight: 2)
+                .padding(.vertical)
+
+            TopTabView(labels: ["My Listings", "Favourites"]) {
+                List {
+                    Text("Listings")
+                        .listRowSeparator(.hidden)
+                }
+                .listStyle(.plain)
+                List {
+                    Text("Favourites")
+                        .listRowSeparator(.hidden)
+                }
+                .listStyle(.plain)
+            }
+        }
+        .padding(.top, .screenEdge)
     }
 }
+
+// MARK: Previews
 
 struct ListingsTab_Previews: PreviewProvider {
     static var previews: some View {

@@ -13,6 +13,10 @@
 		B44D49C127A8842100FE74DA /* ServiceAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49C027A8842100FE74DA /* ServiceAssemblies.swift */; };
 		B44D49C327A884DD00FE74DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49C227A884DD00FE74DA /* HomeViewModel.swift */; };
 		B4590DCD27A9B9C000E4876C /* GardenJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DCC27A9B9C000E4876C /* GardenJSONDecoder.swift */; };
+		B4590DCF27AA2DE000E4876C /* GardenDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DCE27AA2DE000E4876C /* GardenDivider.swift */; };
+		B4590DD127AA2EA000E4876C /* View+if.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DD027AA2EA000E4876C /* View+if.swift */; };
+		B4590DD327AA3B1300E4876C /* TopTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DD227AA3B1300E4876C /* TopTabView.swift */; };
+		B4590DD527AA434400E4876C /* GardenPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DD427AA434400E4876C /* GardenPicker.swift */; };
 		B47AC26327A708BC00AF845B /* NeighbourhoodGardenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC26227A708BC00AF845B /* NeighbourhoodGardenerApp.swift */; };
 		B47AC26527A708BC00AF845B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC26427A708BC00AF845B /* MainView.swift */; };
 		B47AC26727A708BE00AF845B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47AC26627A708BE00AF845B /* Images.xcassets */; };
@@ -71,6 +75,10 @@
 		B44D49C027A8842100FE74DA /* ServiceAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssemblies.swift; sourceTree = "<group>"; };
 		B44D49C227A884DD00FE74DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B4590DCC27A9B9C000E4876C /* GardenJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenJSONDecoder.swift; sourceTree = "<group>"; };
+		B4590DCE27AA2DE000E4876C /* GardenDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenDivider.swift; sourceTree = "<group>"; };
+		B4590DD027AA2EA000E4876C /* View+if.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+if.swift"; sourceTree = "<group>"; };
+		B4590DD227AA3B1300E4876C /* TopTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabView.swift; sourceTree = "<group>"; };
+		B4590DD427AA434400E4876C /* GardenPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenPicker.swift; sourceTree = "<group>"; };
 		B47AC25F27A708BC00AF845B /* NeighbourhoodGardener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeighbourhoodGardener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47AC26227A708BC00AF845B /* NeighbourhoodGardenerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighbourhoodGardenerApp.swift; sourceTree = "<group>"; };
 		B47AC26427A708BC00AF845B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -305,6 +313,9 @@
 				B4F7389C27A73EBC009C9B11 /* CardView.swift */,
 				B4E9610427A76B80001828EB /* ProduceView.swift */,
 				B4E9610627A76C0C001828EB /* GardenImage.swift */,
+				B4590DCE27AA2DE000E4876C /* GardenDivider.swift */,
+				B4590DD227AA3B1300E4876C /* TopTabView.swift */,
+				B4590DD427AA434400E4876C /* GardenPicker.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -315,6 +326,7 @@
 				B4F7389F27A740F8009C9B11 /* CGFloat.swift */,
 				B48E7E5427A779A800ABFBCA /* Text.swift */,
 				B48E7E5627A77ACF00ABFBCA /* Font.swift */,
+				B4590DD027AA2EA000E4876C /* View+if.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -523,9 +535,12 @@
 				B44D49BD27A883B800FE74DA /* UserInterfaceAssemblies.swift in Sources */,
 				B4C453C427A8A70D00C564D5 /* Previews.swift in Sources */,
 				B4C453B927A88FC900C564D5 /* GenericViewModel.swift in Sources */,
+				B4590DD327AA3B1300E4876C /* TopTabView.swift in Sources */,
 				B4590DCD27A9B9C000E4876C /* GardenJSONDecoder.swift in Sources */,
+				B4590DCF27AA2DE000E4876C /* GardenDivider.swift in Sources */,
 				B47AC26527A708BC00AF845B /* MainView.swift in Sources */,
 				B4C453BB27A89C6F00C564D5 /* PreviewAssemblies.swift in Sources */,
+				B4590DD527AA434400E4876C /* GardenPicker.swift in Sources */,
 				B4C453C227A8A56000C564D5 /* Money.swift in Sources */,
 				B44D49BB27A882EC00FE74DA /* GardenAssembler.swift in Sources */,
 				B44D49C327A884DD00FE74DA /* HomeViewModel.swift in Sources */,
@@ -534,6 +549,7 @@
 				B48E7E5527A779A800ABFBCA /* Text.swift in Sources */,
 				B4F7389D27A73EBC009C9B11 /* CardView.swift in Sources */,
 				B47AC2B227A739F400AF845B /* Strings.swift in Sources */,
+				B4590DD127AA2EA000E4876C /* View+if.swift in Sources */,
 				B4E9610727A76C0C001828EB /* GardenImage.swift in Sources */,
 				B44D49C127A8842100FE74DA /* ServiceAssemblies.swift in Sources */,
 			);

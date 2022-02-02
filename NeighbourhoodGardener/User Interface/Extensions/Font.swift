@@ -15,4 +15,8 @@ extension Font {
     static func avenirDemiBold(_ size: CGFloat) -> Font {
         .custom("AvenirNext-DemiBold", size: size)
     }
+
+    static func avenirBold(_ size: CGFloat) -> Font {
+        .custom("AvenirNext-Bold", size: size)
+    }
 }

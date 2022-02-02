@@ -10,27 +10,33 @@ import SwiftUI
 // MARK: Extensions
 
 extension Text {
-    func primaryStyle() -> some View {
+    func primaryStyle() -> Text {
         self
             .font(.avenirMedium(.medium))
             .foregroundColor(.gardenPrimarylabel)
     }
 
-    func secondaryStyle() -> some View {
+    func secondaryStyle() -> Text {
         self
             .font(.avenirMedium(.mediumSmall))
             .foregroundColor(.gardenSecondarylabel)
     }
 
-    func tertiaryStyle() -> some View {
+    func tertiaryStyle() -> Text {
         self
             .font(.avenirMedium(.small))
             .foregroundColor(.gardenTertiarylabel)
     }
 
-    func titleStyle() -> some View {
+    func titleStyle() -> Text {
         self
             .font(.avenirDemiBold(.large))
+            .foregroundColor(.gardenPrimarylabel)
+    }
+
+    func boldStyle(size: CGFloat = .medium) -> Text {
+        self
+            .font(.avenirBold(size))
             .foregroundColor(.gardenPrimarylabel)
     }
 }
