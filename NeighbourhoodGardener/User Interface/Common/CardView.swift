@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: View
+
 struct CardView<Content: View>: View {
     let content: Content
 
@@ -26,6 +28,8 @@ struct CardView<Content: View>: View {
     }
 }
 
+// MARK: CardView.cardColor
+
 extension CardView {
     func cardColor(_ color: Color) -> some View {
         var view = self
@@ -33,6 +37,8 @@ extension CardView {
         return view
     }
 }
+
+// MARK: Previews
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {

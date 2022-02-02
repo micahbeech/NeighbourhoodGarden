@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: ViewModel
+
 extension ProduceView {
     struct ViewModel {
         let name: String
@@ -16,6 +18,8 @@ extension ProduceView {
         let imageUrl: String
     }
 }
+
+// MARK: View
 
 struct ProduceView: View {
     let viewModel: ViewModel
@@ -51,6 +55,8 @@ struct ProduceView: View {
         }
     }
 }
+
+// MARK: Previews
 
 struct ProduceView_Previews: PreviewProvider {
     static var previews: some View {

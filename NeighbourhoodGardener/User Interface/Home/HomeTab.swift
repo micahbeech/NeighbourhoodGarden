@@ -8,12 +8,16 @@
 import SwiftUI
 import Swinject
 
+// MARK: ViewState
+
 extension HomeTab {
     struct ViewState {
         var title: String
         var products: [ProduceCard.ViewModel]
     }
 }
+
+// MARK: View
 
 struct HomeTab: View {
     typealias ViewModel = AnyViewModel<ViewState, Never>
@@ -34,6 +38,8 @@ struct HomeTab: View {
         }
     }
 }
+
+// MARK: Previews
 
 struct HomeTab_Previews: PreviewProvider {
     static let homeTab = GardenAssembler().resolver.resolve(HomeTab.self, name: "Preview")
@@ -63,6 +69,8 @@ private extension HomeTab.ViewState {
         })
     )
 }
+
+// MARK: Assemblies
 
 final class HomeTabAssembly: Assembly {
     func assemble(container: Container) {

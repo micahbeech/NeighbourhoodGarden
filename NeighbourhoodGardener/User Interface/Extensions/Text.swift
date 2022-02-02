@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: Extensions
+
 extension Text {
     func primaryStyle() -> some View {
         self
@@ -32,6 +34,8 @@ extension Text {
             .foregroundColor(.gardenPrimarylabel)
     }
 }
+
+// MARK: Previews
 
 struct TextStyle_Previews: PreviewProvider {
     static var previews: some View {

@@ -8,20 +8,23 @@
 import Foundation
 import Swinject
 
+// MARK: ProductService
+
 protocol ProductService {
     func getProducts() async -> [Product]
 }
+
+// MARK: RealProductService
 
 final class RealProductService: ProductService {
     func getProducts() async -> [Product] {
         // FIX ME: Temporary Implementation
         let data = PreviewData.products.data.data
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let products = try? decoder.decode([Product].self, from: data)
-        return products ?? []
+        return GardenJSONDecoder().decodeOrNull([Product].self, from: data) ?? []
     }
 }
+
+// MARK: RealProductServiceAssembly
 
 final class RealProductServiceAssembly: Assembly {
     func assemble(container: Container) {

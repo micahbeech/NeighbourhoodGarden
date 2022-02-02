@@ -8,32 +8,30 @@
 import Foundation
 import Swinject
 
-protocol Test {
-    var title: String { get }
-    var products: [ProduceCard.ViewModel] { get }
-}
+// MARK: HomeViewModel
 
 final class HomeViewModel: ViewModel {
     typealias State = HomeTab.ViewState
     typealias Event = Never
 
     @Published var state = HomeTab.ViewState(title: L10n.Home.header, products: [])
+    private var products = [Product]()
 
-    let productService: ProductService
+    private let productService: ProductService
 
     init(productService: ProductService) {
         self.productService = productService
 
-        Task {
-            await self.getProducts()
-        }
+        self.getProducts()
     }
 }
 
+// MARK: Private methods
+
 extension HomeViewModel {
-    private func getProducts() async {
+    private func setState() {
         let numberFormatter = NumberFormatter()
-        let products = await self.productService.getProducts().map { product in
+        let productViewModels = products.map { product in
             ProduceCard.ViewModel(
                 productName: product.name,
                 description: product.description,
@@ -42,9 +40,21 @@ extension HomeViewModel {
                 imageUrl: product.imageUrls.first ?? ""
             )
         }
-        self.state = .init(title: L10n.Home.header, products: products)
+        self.state = .init(title: L10n.Home.header, products: productViewModels)
+    }
+
+    private func getProducts() {
+        Task { [weak self] in
+            guard let self = self else { return }
+            self.products = await self.productService.getProducts()
+            DispatchQueue.main.async { [weak self] in
+                self?.setState()
+            }
+        }
     }
 }
+
+// MARK: HomeViewModelAssembly
 
 final class HomeViewModelAssembly: Assembly {
     func assemble(container: Container) {

@@ -7,9 +7,10 @@
 
 import SwiftUI
 
+// MARK: ViewModel
+
 extension ProduceCard {
-    struct ViewModel: Identifiable {
-        let id = UUID()
+    struct ViewModel: IdentifiableViewModel {
         let productName: String
         let description: String
         let price: String
@@ -17,6 +18,8 @@ extension ProduceCard {
         let imageUrl: String
     }
 }
+
+// MARK: View
 
 struct ProduceCard: View {
     let viewModel: ViewModel
@@ -35,6 +38,8 @@ struct ProduceCard: View {
         .frame(height: 180)
     }
 }
+
+// MARK: Previews
 
 struct ProduceCard_Previews: PreviewProvider {
     static var previews: some View {

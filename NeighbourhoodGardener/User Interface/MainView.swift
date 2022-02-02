@@ -8,6 +8,8 @@
 import SwiftUI
 import Swinject
 
+// MARK: View
+
 struct MainView: View {
     let homeTab: HomeTab
 
@@ -26,6 +28,8 @@ struct MainView: View {
     }
 }
 
+// MARK: View.TabItem
+
 extension View {
     func tabItem(label: String, image: String) -> some View {
         self.tabItem {
@@ -37,6 +41,8 @@ extension View {
     }
 }
 
+// MARK: Previews
+
 struct MainView_Previews: PreviewProvider {
     static let mainView = GardenAssembler().resolver.resolve(MainView.self, name: "Preview")
 
@@ -44,6 +50,8 @@ struct MainView_Previews: PreviewProvider {
         PreviewGroup { mainView }
     }
 }
+
+// MARK: Assemblies
 
 final class MainViewAssembly: Assembly {
     func assemble(container: Container) {

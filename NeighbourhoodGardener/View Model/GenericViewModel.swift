@@ -17,9 +17,7 @@ protocol ViewModel: ObservableObject where ObjectWillChangePublisher.Output == V
 }
 
 extension ViewModel {
-    func eraseToAnyViewModel() -> AnyViewModel<State, Event> {
-        return AnyViewModel(self)
-    }
+    func eraseToAnyViewModel() -> AnyViewModel<State, Event> { AnyViewModel(self) }
 }
 
 extension ViewModel where Event == Never {
@@ -42,6 +40,7 @@ final class AnyViewModel<State, Event>: ViewModel {
         self.wrappedTrigger = viewModel.trigger
     }
 
+    /// Use for previews only.
     init(state: State) {
         self.objectWillChange = PassthroughSubject().eraseToAnyPublisher()
         self.wrappedState = { state }

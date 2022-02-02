@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: View
+
 struct GardenImage: View {
     let imageUrl: String
     let size: CGFloat?
@@ -30,6 +32,8 @@ struct GardenImage: View {
         }
     }
 }
+
+// MARK: Previews
 
 struct GardenImage_Previews: PreviewProvider {
     static var previews: some View {

@@ -12,6 +12,7 @@
 		B44D49BF27A8840700FE74DA /* ViewModelAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49BE27A8840700FE74DA /* ViewModelAssemblies.swift */; };
 		B44D49C127A8842100FE74DA /* ServiceAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49C027A8842100FE74DA /* ServiceAssemblies.swift */; };
 		B44D49C327A884DD00FE74DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49C227A884DD00FE74DA /* HomeViewModel.swift */; };
+		B4590DCD27A9B9C000E4876C /* GardenJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DCC27A9B9C000E4876C /* GardenJSONDecoder.swift */; };
 		B47AC26327A708BC00AF845B /* NeighbourhoodGardenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC26227A708BC00AF845B /* NeighbourhoodGardenerApp.swift */; };
 		B47AC26527A708BC00AF845B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC26427A708BC00AF845B /* MainView.swift */; };
 		B47AC26727A708BE00AF845B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47AC26627A708BE00AF845B /* Images.xcassets */; };
@@ -34,6 +35,7 @@
 		B4C453C227A8A56000C564D5 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453C127A8A56000C564D5 /* Money.swift */; };
 		B4C453C427A8A70D00C564D5 /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453C327A8A70D00C564D5 /* Previews.swift */; };
 		B4C453C727A8AA3000C564D5 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453C627A8AA3000C564D5 /* NumberFormatter.swift */; };
+		B4C453CB27A8B24E00C564D5 /* IdentifiableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453CA27A8B24E00C564D5 /* IdentifiableViewModel.swift */; };
 		B4E9610327A767A7001828EB /* PreviewGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9610227A767A7001828EB /* PreviewGroup.swift */; };
 		B4E9610527A76B80001828EB /* ProduceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9610427A76B80001828EB /* ProduceView.swift */; };
 		B4E9610727A76C0C001828EB /* GardenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9610627A76C0C001828EB /* GardenImage.swift */; };
@@ -68,6 +70,7 @@
 		B44D49BE27A8840700FE74DA /* ViewModelAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssemblies.swift; sourceTree = "<group>"; };
 		B44D49C027A8842100FE74DA /* ServiceAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssemblies.swift; sourceTree = "<group>"; };
 		B44D49C227A884DD00FE74DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B4590DCC27A9B9C000E4876C /* GardenJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenJSONDecoder.swift; sourceTree = "<group>"; };
 		B47AC25F27A708BC00AF845B /* NeighbourhoodGardener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeighbourhoodGardener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47AC26227A708BC00AF845B /* NeighbourhoodGardenerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighbourhoodGardenerApp.swift; sourceTree = "<group>"; };
 		B47AC26427A708BC00AF845B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 		B4C453C127A8A56000C564D5 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		B4C453C327A8A70D00C564D5 /* Previews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
 		B4C453C627A8AA3000C564D5 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		B4C453CA27A8B24E00C564D5 /* IdentifiableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableViewModel.swift; sourceTree = "<group>"; };
 		B4E9610227A767A7001828EB /* PreviewGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewGroup.swift; sourceTree = "<group>"; };
 		B4E9610427A76B80001828EB /* ProduceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduceView.swift; sourceTree = "<group>"; };
 		B4E9610627A76C0C001828EB /* GardenImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenImage.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 				B4C453B827A88FC900C564D5 /* GenericViewModel.swift */,
 				B44D49C227A884DD00FE74DA /* HomeViewModel.swift */,
 				B44D49BE27A8840700FE74DA /* ViewModelAssemblies.swift */,
+				B4C453CA27A8B24E00C564D5 /* IdentifiableViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				B4C453C627A8AA3000C564D5 /* NumberFormatter.swift */,
+				B4590DCC27A9B9C000E4876C /* GardenJSONDecoder.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -511,11 +517,13 @@
 				B4C453C027A8A50200C564D5 /* Product.swift in Sources */,
 				B47AC29927A70B1300AF845B /* AccountTab.swift in Sources */,
 				B48E7E5927A77E4F00ABFBCA /* ProduceCard.swift in Sources */,
+				B4C453CB27A8B24E00C564D5 /* IdentifiableViewModel.swift in Sources */,
 				B4F738B227A75931009C9B11 /* Images.swift in Sources */,
 				B44D49BF27A8840700FE74DA /* ViewModelAssemblies.swift in Sources */,
 				B44D49BD27A883B800FE74DA /* UserInterfaceAssemblies.swift in Sources */,
 				B4C453C427A8A70D00C564D5 /* Previews.swift in Sources */,
 				B4C453B927A88FC900C564D5 /* GenericViewModel.swift in Sources */,
+				B4590DCD27A9B9C000E4876C /* GardenJSONDecoder.swift in Sources */,
 				B47AC26527A708BC00AF845B /* MainView.swift in Sources */,
 				B4C453BB27A89C6F00C564D5 /* PreviewAssemblies.swift in Sources */,
 				B4C453C227A8A56000C564D5 /* Money.swift in Sources */,
