@@ -16,8 +16,8 @@ import SwiftUI
 // - Update GardenPicker to allow for non-text labels
 struct TopTabView: View {
     @State private var selectedTab = 0
-    let labels: [String]
-    let content: [AnyView]
+    private let labels: [String]
+    private let content: [AnyView]
 
     var body: some View {
         VStack {

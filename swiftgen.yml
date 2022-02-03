@@ -21,7 +21,7 @@ xcassets:
           type: Color
           prefix: garden
           
-  - inputs: ./NeighbourhoodGardener/Preview Content/Preview Assets.xcassets
+  - inputs: ./NeighbourhoodGardener/User Interface/Preview Content/Preview Assets.xcassets
     outputs:
       - templateName: swift5
         output: ./NeighbourhoodGardener/Generated/Previews.swift

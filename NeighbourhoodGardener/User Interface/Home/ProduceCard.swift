@@ -26,14 +26,16 @@ struct ProduceCard: View {
 
     var body: some View {
         CardView {
-            ProduceView(viewModel: .init(
-                name: viewModel.productName,
-                description: viewModel.description,
-                price: viewModel.price,
-                seller: viewModel.seller,
-                imageUrl: viewModel.imageUrl
-            ))
-                .padding(.screenEdge)
+            HStack(alignment: .top, spacing: .extraSmall) {
+                GardenImage(imageUrl: viewModel.imageUrl, size: 100)
+                ProductInfo(viewModel: .init(
+                    name: viewModel.productName,
+                    description: viewModel.description,
+                    price: viewModel.price,
+                    seller: viewModel.seller
+                ))
+            }
+            .padding(.screenEdge)
         }
         .frame(height: 180)
     }

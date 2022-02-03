@@ -11,6 +11,7 @@ import Swinject
 // swiftlint:disable identifier_name
 var PreviewAssemblies: [Assembly] = [
     MainViewPreviewAssembly(),
-    HomeTabPreviewAssembly()
+    HomeTabPreviewAssembly(),
+    ListingsViewPreviewAssembly()
 ]
 // swiftlint:enable identifier_name
