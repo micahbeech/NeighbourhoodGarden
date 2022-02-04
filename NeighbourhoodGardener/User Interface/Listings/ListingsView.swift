@@ -20,7 +20,7 @@ extension ListingsView {
 
 struct ListingsView: View {
     typealias ViewModel = AnyViewModel<ViewState, Never>
-    @ObservedObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: ViewModel
 
     var body: some View {
         List(viewModel.state.listings) { listing in
@@ -34,16 +34,15 @@ struct ListingsView: View {
 // MARK: Previews
 
 struct ListingsView_Previews: PreviewProvider {
-    static let listingsView = GardenAssembler().resolver.resolve(ListingsView.self, name: "Preview")
-
     static var previews: some View {
         PreviewGroup {
-            listingsView
+            ListingsView()
+                .injectPreview(ListingsView.ViewModel.self)
         }
     }
 }
 
-private extension ListingsView.ViewState {
+extension ListingsView.ViewState: StatePreviewable {
     static let preview = Self(
         listings: [
             "Lettuce",
@@ -61,23 +60,4 @@ private extension ListingsView.ViewState {
             )
         })
     )
-}
-
-// MARK: Assemblies
-
-// final class ListingsViewAssembly: Assembly {
-//    func assemble(container: Container) {
-//        container.register(ListingsView.self) { resolver in
-//            let viewModel = resolver.resolve(HomeTab.ViewModel.self)!
-//            return ListingsView(viewModel: viewModel)
-//        }
-//    }
-// }
-
-final class ListingsViewPreviewAssembly: Assembly {
-    func assemble(container: Container) {
-        container.register(ListingsView.self, name: "Preview") { _ in
-            return ListingsView(viewModel: .init(state: .preview))
-        }
-    }
 }

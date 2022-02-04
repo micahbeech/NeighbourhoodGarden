@@ -8,6 +8,8 @@
 import Foundation
 import Combine
 
+// MARK: ViewModel
+
 protocol ViewModel: ObservableObject where ObjectWillChangePublisher.Output == Void {
     associatedtype State
     associatedtype Event
@@ -23,6 +25,8 @@ extension ViewModel {
 extension ViewModel where Event == Never {
     func trigger(_ event: Event) {}
 }
+
+// MARK: AnyViewModel
 
 final class AnyViewModel<State, Event>: ViewModel {
     let objectWillChange: AnyPublisher<Void, Never>

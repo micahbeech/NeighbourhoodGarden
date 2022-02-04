@@ -8,19 +8,23 @@
 import Foundation
 import Swinject
 
-class GardenAssembler {
+// MARK: GardenAssembler
+
+final class GardenAssembler {
+    static let shared = GardenAssembler()
+
     let assembler = Assembler()
     var resolver: Resolver { assembler.resolver }
 
     init() {
         assembler.apply(assembly: ResolverAssembly())
 
-        assembler.apply(assemblies: UserInterfaceAssemblies)
-        assembler.apply(assemblies: PreviewAssemblies)
         assembler.apply(assemblies: ViewModelAssemblies)
         assembler.apply(assemblies: ServiceAssemblies)
     }
 }
+
+// MARK: ResolverAssembly
 
 class ResolverAssembly: Assembly {
     func assemble(container: Container) {

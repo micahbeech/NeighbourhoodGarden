@@ -9,11 +9,10 @@ import SwiftUI
 
 @main
 struct NeighbourhoodGardenerApp: App {
-    private let assembler = GardenAssembler()
-
     var body: some Scene {
         WindowGroup {
-            assembler.resolver.resolve(MainView.self)
+            MainView()
+                .inject(HomeTab.ViewModel.self)
         }
     }
 }

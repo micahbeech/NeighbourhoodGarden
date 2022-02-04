@@ -11,7 +11,6 @@
 		B42FEFD627AC3F1900A90639 /* ListingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FEFD527AC3F1900A90639 /* ListingCard.swift */; };
 		B42FEFD827AC443F00A90639 /* HorizontalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FEFD727AC443F00A90639 /* HorizontalList.swift */; };
 		B44D49BB27A882EC00FE74DA /* GardenAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49BA27A882EC00FE74DA /* GardenAssembler.swift */; };
-		B44D49BD27A883B800FE74DA /* UserInterfaceAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49BC27A883B800FE74DA /* UserInterfaceAssemblies.swift */; };
 		B44D49BF27A8840700FE74DA /* ViewModelAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49BE27A8840700FE74DA /* ViewModelAssemblies.swift */; };
 		B44D49C127A8842100FE74DA /* ServiceAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49C027A8842100FE74DA /* ServiceAssemblies.swift */; };
 		B44D49C327A884DD00FE74DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44D49C227A884DD00FE74DA /* HomeViewModel.swift */; };
@@ -32,11 +31,11 @@
 		B47AC29927A70B1300AF845B /* AccountTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC29827A70B1300AF845B /* AccountTab.swift */; };
 		B47AC2AC27A738E400AF845B /* NeighbourhoodGardener.strings in Resources */ = {isa = PBXBuildFile; fileRef = B47AC2AE27A738E400AF845B /* NeighbourhoodGardener.strings */; };
 		B47AC2B227A739F400AF845B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC2B027A739F400AF845B /* Strings.swift */; };
+		B488DDD727AD86A300E0E722 /* View+Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488DDD627AD86A300E0E722 /* View+Inject.swift */; };
 		B48E7E5527A779A800ABFBCA /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E5427A779A800ABFBCA /* Text.swift */; };
 		B48E7E5727A77ACF00ABFBCA /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E5627A77ACF00ABFBCA /* Font.swift */; };
 		B48E7E5927A77E4F00ABFBCA /* ProduceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E5827A77E4F00ABFBCA /* ProduceCard.swift */; };
 		B4C453B927A88FC900C564D5 /* GenericViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453B827A88FC900C564D5 /* GenericViewModel.swift */; };
-		B4C453BB27A89C6F00C564D5 /* PreviewAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453BA27A89C6F00C564D5 /* PreviewAssemblies.swift */; };
 		B4C453BD27A8A4CA00C564D5 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453BC27A8A4CA00C564D5 /* ProductService.swift */; };
 		B4C453C027A8A50200C564D5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453BF27A8A50200C564D5 /* Product.swift */; };
 		B4C453C227A8A56000C564D5 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453C127A8A56000C564D5 /* Money.swift */; };
@@ -76,7 +75,6 @@
 		B42FEFD527AC3F1900A90639 /* ListingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCard.swift; sourceTree = "<group>"; };
 		B42FEFD727AC443F00A90639 /* HorizontalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalList.swift; sourceTree = "<group>"; };
 		B44D49BA27A882EC00FE74DA /* GardenAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenAssembler.swift; sourceTree = "<group>"; };
-		B44D49BC27A883B800FE74DA /* UserInterfaceAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceAssemblies.swift; sourceTree = "<group>"; };
 		B44D49BE27A8840700FE74DA /* ViewModelAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssemblies.swift; sourceTree = "<group>"; };
 		B44D49C027A8842100FE74DA /* ServiceAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssemblies.swift; sourceTree = "<group>"; };
 		B44D49C227A884DD00FE74DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -100,11 +98,11 @@
 		B47AC29827A70B1300AF845B /* AccountTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTab.swift; sourceTree = "<group>"; };
 		B47AC2AD27A738E400AF845B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NeighbourhoodGardener.strings; sourceTree = "<group>"; };
 		B47AC2B027A739F400AF845B /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		B488DDD627AD86A300E0E722 /* View+Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Inject.swift"; sourceTree = "<group>"; };
 		B48E7E5427A779A800ABFBCA /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		B48E7E5627A77ACF00ABFBCA /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B48E7E5827A77E4F00ABFBCA /* ProduceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduceCard.swift; sourceTree = "<group>"; };
 		B4C453B827A88FC900C564D5 /* GenericViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewModel.swift; sourceTree = "<group>"; };
-		B4C453BA27A89C6F00C564D5 /* PreviewAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewAssemblies.swift; sourceTree = "<group>"; };
 		B4C453BC27A8A4CA00C564D5 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		B4C453BF27A8A50200C564D5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		B4C453C127A8A56000C564D5 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
@@ -149,6 +147,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B42FF00027AD750200A90639 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B4C453B827A88FC900C564D5 /* GenericViewModel.swift */,
+				B4C453CA27A8B24E00C564D5 /* IdentifiableViewModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		B47AC25627A708BB00AF845B = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +199,6 @@
 			children = (
 				B47AC26927A708BE00AF845B /* Preview Assets.xcassets */,
 				B4E9610227A767A7001828EB /* PreviewGroup.swift */,
-				B4C453BA27A89C6F00C564D5 /* PreviewAssemblies.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -224,7 +230,6 @@
 				B4F7389B27A73EA1009C9B11 /* Common */,
 				B4F7389E27A740CB009C9B11 /* Extensions */,
 				B47AC26827A708BE00AF845B /* Preview Content */,
-				B44D49BC27A883B800FE74DA /* UserInterfaceAssemblies.swift */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -232,10 +237,9 @@
 		B47AC28E27A708FB00AF845B /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				B4C453B827A88FC900C564D5 /* GenericViewModel.swift */,
+				B42FF00027AD750200A90639 /* Common */,
 				B44D49C227A884DD00FE74DA /* HomeViewModel.swift */,
 				B44D49BE27A8840700FE74DA /* ViewModelAssemblies.swift */,
-				B4C453CA27A8B24E00C564D5 /* IdentifiableViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -336,6 +340,7 @@
 				B48E7E5427A779A800ABFBCA /* Text.swift */,
 				B48E7E5627A77ACF00ABFBCA /* Font.swift */,
 				B4590DD027AA2EA000E4876C /* View+if.swift */,
+				B488DDD627AD86A300E0E722 /* View+Inject.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -537,12 +542,12 @@
 				B47AC29727A70B0400AF845B /* ListingsTab.swift in Sources */,
 				B47AC29527A70ADC00AF845B /* HomeTab.swift in Sources */,
 				B4C453C027A8A50200C564D5 /* Product.swift in Sources */,
+				B488DDD727AD86A300E0E722 /* View+Inject.swift in Sources */,
 				B47AC29927A70B1300AF845B /* AccountTab.swift in Sources */,
 				B48E7E5927A77E4F00ABFBCA /* ProduceCard.swift in Sources */,
 				B4C453CB27A8B24E00C564D5 /* IdentifiableViewModel.swift in Sources */,
 				B4F738B227A75931009C9B11 /* Images.swift in Sources */,
 				B44D49BF27A8840700FE74DA /* ViewModelAssemblies.swift in Sources */,
-				B44D49BD27A883B800FE74DA /* UserInterfaceAssemblies.swift in Sources */,
 				B4C453C427A8A70D00C564D5 /* Previews.swift in Sources */,
 				B4C453B927A88FC900C564D5 /* GenericViewModel.swift in Sources */,
 				B4590DD327AA3B1300E4876C /* TopTabView.swift in Sources */,
@@ -550,7 +555,6 @@
 				B4590DCF27AA2DE000E4876C /* GardenDivider.swift in Sources */,
 				B42FEFD627AC3F1900A90639 /* ListingCard.swift in Sources */,
 				B47AC26527A708BC00AF845B /* MainView.swift in Sources */,
-				B4C453BB27A89C6F00C564D5 /* PreviewAssemblies.swift in Sources */,
 				B4590DD527AA434400E4876C /* GardenPicker.swift in Sources */,
 				B4C453C227A8A56000C564D5 /* Money.swift in Sources */,
 				B44D49BB27A882EC00FE74DA /* GardenAssembler.swift in Sources */,
@@ -734,7 +738,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NeighbourhoodGardener/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "NeighbourhoodGardener/User\\ Interface/Preview\\ Content";
 				DEVELOPMENT_TEAM = 99QP45942G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -765,7 +769,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NeighbourhoodGardener/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "NeighbourhoodGardener/User\\ Interface/Preview\\ Content";
 				DEVELOPMENT_TEAM = 99QP45942G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

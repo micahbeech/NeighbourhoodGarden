@@ -21,7 +21,7 @@ extension HomeTab {
 
 struct HomeTab: View {
     typealias ViewModel = AnyViewModel<ViewState, Never>
-    @ObservedObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: ViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: .small) {
@@ -42,14 +42,15 @@ struct HomeTab: View {
 // MARK: Previews
 
 struct HomeTab_Previews: PreviewProvider {
-    static let homeTab = GardenAssembler().resolver.resolve(HomeTab.self, name: "Preview")
-
     static var previews: some View {
-        PreviewGroup { homeTab }
+        PreviewGroup {
+            HomeTab()
+                .injectPreview(HomeTab.ViewModel.self)
+        }
     }
 }
 
-private extension HomeTab.ViewState {
+extension HomeTab.ViewState: StatePreviewable {
     static let preview = Self(
         title: "Neighbourhood Garden",
         products: [
@@ -68,23 +69,4 @@ private extension HomeTab.ViewState {
             )
         })
     )
-}
-
-// MARK: Assemblies
-
-final class HomeTabAssembly: Assembly {
-    func assemble(container: Container) {
-        container.register(HomeTab.self) { resolver in
-            let viewModel = resolver.resolve(HomeTab.ViewModel.self)!
-            return HomeTab(viewModel: viewModel)
-        }
-    }
-}
-
-final class HomeTabPreviewAssembly: Assembly {
-    func assemble(container: Container) {
-        container.register(HomeTab.self, name: "Preview") { _ in
-            return HomeTab(viewModel: .init(state: .preview))
-        }
-    }
 }

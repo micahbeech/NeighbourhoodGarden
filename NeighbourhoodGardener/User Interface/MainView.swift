@@ -11,11 +11,9 @@ import Swinject
 // MARK: View
 
 struct MainView: View {
-    let homeTab: HomeTab
-
     var body: some View {
         TabView {
-            homeTab
+            HomeTab()
                 .tabItem(label: L10n.Tab.home, image: "house")
 
             ListingsTab()
@@ -44,29 +42,9 @@ extension View {
 // MARK: Previews
 
 struct MainView_Previews: PreviewProvider {
-    static let mainView = GardenAssembler().resolver.resolve(MainView.self, name: "Preview")
-
     static var previews: some View {
-        PreviewGroup { mainView }
-    }
-}
-
-// MARK: Assemblies
-
-final class MainViewAssembly: Assembly {
-    func assemble(container: Container) {
-        container.register(MainView.self) { resolver in
-            let homeTab = resolver.resolve(HomeTab.self)!
-            return MainView(homeTab: homeTab)
-        }
-    }
-}
-
-final class MainViewPreviewAssembly: Assembly {
-    func assemble(container: Container) {
-        container.register(MainView.self, name: "Preview") { resolver in
-            let homeTab = resolver.resolve(HomeTab.self, name: "Preview")!
-            return MainView(homeTab: homeTab)
+        PreviewGroup {
+            MainView()
         }
     }
 }
