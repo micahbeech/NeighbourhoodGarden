@@ -10,7 +10,7 @@ import SwiftUI
 // MARK: ViewModel
 
 extension ProduceCard {
-    struct ViewModel: IdentifiableViewModel {
+    struct ViewModel: DefaultIdentifiable {
         let productName: String
         let description: String
         let price: String

@@ -11,7 +11,7 @@ import Swinject
 // MARK: ViewState
 
 extension HomeTab {
-    struct ViewState {
+    struct ViewState: DefaultIdentifiable {
         var title: String
         var products: [ProduceCard.ViewModel]
     }
@@ -21,7 +21,7 @@ extension HomeTab {
 
 struct HomeTab: View {
     typealias ViewModel = AnyViewModel<ViewState, Never>
-    @EnvironmentObject var viewModel: ViewModel
+    @ObservedInject var viewModel: ViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: .small) {

@@ -11,7 +11,7 @@ import Swinject
 // MARK: ViewState
 
 extension ListingsView {
-    struct ViewState {
+    struct ViewState: DefaultIdentifiable {
         let listings: [ListingCard.ViewModel]
     }
 }
@@ -20,7 +20,7 @@ extension ListingsView {
 
 struct ListingsView: View {
     typealias ViewModel = AnyViewModel<ViewState, Never>
-    @EnvironmentObject var viewModel: ViewModel
+    @ObservedInject var viewModel: ViewModel
 
     var body: some View {
         List(viewModel.state.listings) { listing in

@@ -55,3 +55,7 @@ final class AnyViewModel<State, Event>: ViewModel {
 extension AnyViewModel: Identifiable where State: Identifiable {
     var id: State.ID { state.id }
 }
+
+extension AnyViewModel: Equatable where State: Equatable {
+    static func == (lhs: AnyViewModel, rhs: AnyViewModel) -> Bool { lhs.state == rhs.state }
+}
