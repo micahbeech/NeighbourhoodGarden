@@ -13,6 +13,7 @@ struct NeighbourhoodGardenerApp: App {
         WindowGroup {
             MainView()
                 .inject(HomeTab.ViewModel.self)
+                .inject(ListingsView.ViewModel.self)
         }
     }
 }

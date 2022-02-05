@@ -10,6 +10,7 @@ import Swinject
 
 // swiftlint:disable identifier_name
 var ViewModelAssemblies: [Assembly] = [
-    HomeViewModelAssembly()
+    HomeViewModelAssembly(),
+    ListingsViewModelAssembly()
 ]
 // swiftlint:enable identifier_name

@@ -29,9 +29,10 @@ struct ListingCard: View {
             VStack(spacing: .zero) {
                 HorizontalList(viewModel.images, id: \.self) { url in
                     GardenImage(imageUrl: url, size: nil)
-                        .padding(.trailing, .small)
+                        .padding(.leading, .screenEdge)
+                        .if(url == viewModel.images.last) { $0.padding(.trailing, .screenEdge) }
                 }
-                .padding(.screenEdge)
+                .padding(.vertical, .screenEdge)
 
                 GardenDivider(weight: 2)
                     .ignoresSafeArea()

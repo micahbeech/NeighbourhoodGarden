@@ -1,20 +1,20 @@
 //
-//  RealHomeViewModel.swift
+//  ListingsViewModel.swift
 //  NeighbourhoodGardener
 //
-//  Created by Micah Beech on 2022-01-31.
+//  Created by Micah Beech on 2022-02-05.
 //
 
 import Foundation
 import Swinject
 
-// MARK: HomeViewModel
+// MARK: ListingsViewModel
 
-final class HomeViewModel: ViewModel {
-    typealias State = HomeTab.ViewState
+final class ListingsViewModel: ViewModel {
+    typealias State = ListingsView.ViewState
     typealias Event = Never
 
-    @Published var state = HomeTab.ViewState(title: L10n.Home.header, products: [])
+    @Published var state = ListingsView.ViewState(listings: [])
 
     private let numberFormatter = NumberFormatter()
     private let subscriberManager = SubscriberManager()
@@ -23,14 +23,14 @@ final class HomeViewModel: ViewModel {
     init(productService: ProductService) {
         self.productService = productService
 
-        self.getProducts()
+        self.getListings()
     }
 }
 
-// MARK: Private methods
+// MARK: Private Methods
 
-extension HomeViewModel {
-    private func getProducts() {
+extension ListingsViewModel {
+    private func getListings() {
         self.productService.getProducts()
             .map {
                 $0.map { [weak self] product in
@@ -39,24 +39,24 @@ extension HomeViewModel {
                         description: product.description,
                         price: self?.numberFormatter.string(from: product.price) ?? "",
                         seller: product.seller,
-                        imageUrl: product.imageUrls.first ?? ""
+                        images: product.imageUrls
                     )
                 }
             }
-            .map { .init(title: L10n.Home.header, products: $0) }
+            .map { .init(listings: $0) }
             .receive(on: RunLoop.main)
             .assign(to: \.state, on: self)
             .store(in: &subscriberManager.cancellables)
     }
 }
 
-// MARK: HomeViewModelAssembly
+// MARK: ListingsViewModelAssembly
 
-final class HomeViewModelAssembly: Assembly {
+final class ListingsViewModelAssembly: Assembly {
     func assemble(container: Container) {
-        container.register(HomeTab.ViewModel.self) { resolver in
+        container.register(ListingsView.ViewModel.self) { resolver in
             let productService = resolver.resolve(ProductService.self)!
-            return HomeViewModel(productService: productService).eraseToAnyViewModel()
+            return ListingsViewModel(productService: productService).eraseToAnyViewModel()
         }
     }
 }

@@ -20,7 +20,7 @@ struct TopTabView: View {
     private let content: [AnyView]
 
     var body: some View {
-        VStack {
+        VStack(spacing: .zero) {
             GardenPicker(selection: $selectedTab, labels: labels)
 
             if selectedTab < content.count {

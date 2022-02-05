@@ -21,7 +21,7 @@ extension HomeTab {
 
 struct HomeTab: View {
     typealias ViewModel = AnyViewModel<ViewState, Never>
-    @ObservedInject var viewModel: ViewModel
+    @ObservedInject private var viewModel: ViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: .small) {

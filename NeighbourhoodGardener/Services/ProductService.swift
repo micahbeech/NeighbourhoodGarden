@@ -7,20 +7,22 @@
 
 import Foundation
 import Swinject
+import Combine
 
 // MARK: ProductService
 
 protocol ProductService {
-    func getProducts() async -> [Product]
+    func getProducts() -> AnyPublisher<[Product], Never>
 }
 
 // MARK: RealProductService
 
 final class RealProductService: ProductService {
-    func getProducts() async -> [Product] {
+    func getProducts() -> AnyPublisher<[Product], Never> {
         // FIX ME: Temporary Implementation
         let data = PreviewData.products.data.data
-        return GardenJSONDecoder().decodeOrNull([Product].self, from: data) ?? []
+        let products = GardenJSONDecoder().decodeOrNull([Product].self, from: data) ?? []
+        return Just(products).eraseToAnyPublisher()
     }
 }
 

@@ -35,6 +35,8 @@
 		B48E7E5527A779A800ABFBCA /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E5427A779A800ABFBCA /* Text.swift */; };
 		B48E7E5727A77ACF00ABFBCA /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E5627A77ACF00ABFBCA /* Font.swift */; };
 		B48E7E5927A77E4F00ABFBCA /* ProduceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E5827A77E4F00ABFBCA /* ProduceCard.swift */; };
+		B4B1C71D27AEE53100C9EBE9 /* ListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C71C27AEE53100C9EBE9 /* ListingsViewModel.swift */; };
+		B4B1C72327AEF8AC00C9EBE9 /* SubscriberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C72227AEF8AC00C9EBE9 /* SubscriberManager.swift */; };
 		B4C453B927A88FC900C564D5 /* GenericViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453B827A88FC900C564D5 /* GenericViewModel.swift */; };
 		B4C453BD27A8A4CA00C564D5 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453BC27A8A4CA00C564D5 /* ProductService.swift */; };
 		B4C453C027A8A50200C564D5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C453BF27A8A50200C564D5 /* Product.swift */; };
@@ -102,6 +104,8 @@
 		B48E7E5427A779A800ABFBCA /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		B48E7E5627A77ACF00ABFBCA /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B48E7E5827A77E4F00ABFBCA /* ProduceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduceCard.swift; sourceTree = "<group>"; };
+		B4B1C71C27AEE53100C9EBE9 /* ListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsViewModel.swift; sourceTree = "<group>"; };
+		B4B1C72227AEF8AC00C9EBE9 /* SubscriberManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberManager.swift; sourceTree = "<group>"; };
 		B4C453B827A88FC900C564D5 /* GenericViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewModel.swift; sourceTree = "<group>"; };
 		B4C453BC27A8A4CA00C564D5 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		B4C453BF27A8A50200C564D5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 			children = (
 				B42FF00027AD750200A90639 /* Common */,
 				B44D49C227A884DD00FE74DA /* HomeViewModel.swift */,
+				B4B1C71C27AEE53100C9EBE9 /* ListingsViewModel.swift */,
 				B44D49BE27A8840700FE74DA /* ViewModelAssemblies.swift */,
 			);
 			path = "View Model";
@@ -315,6 +320,7 @@
 				B4C453CA27A8B24E00C564D5 /* DefaultIdentifiable.swift */,
 				B4C453C627A8AA3000C564D5 /* NumberFormatter.swift */,
 				B4590DCC27A9B9C000E4876C /* GardenJSONDecoder.swift */,
+				B4B1C72227AEF8AC00C9EBE9 /* SubscriberManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -535,6 +541,7 @@
 				B4E9610327A767A7001828EB /* PreviewGroup.swift in Sources */,
 				B4E9610527A76B80001828EB /* ProductInfo.swift in Sources */,
 				B48E7E5727A77ACF00ABFBCA /* Font.swift in Sources */,
+				B4B1C71D27AEE53100C9EBE9 /* ListingsViewModel.swift in Sources */,
 				B4F738A027A740F8009C9B11 /* CGFloat.swift in Sources */,
 				B4F738B327A75931009C9B11 /* Colors.swift in Sources */,
 				B42FEFD827AC443F00A90639 /* HorizontalList.swift in Sources */,
@@ -549,6 +556,7 @@
 				B4F738B227A75931009C9B11 /* Images.swift in Sources */,
 				B44D49BF27A8840700FE74DA /* ViewModelAssemblies.swift in Sources */,
 				B4C453C427A8A70D00C564D5 /* Previews.swift in Sources */,
+				B4B1C72327AEF8AC00C9EBE9 /* SubscriberManager.swift in Sources */,
 				B4C453B927A88FC900C564D5 /* GenericViewModel.swift in Sources */,
 				B4590DD327AA3B1300E4876C /* TopTabView.swift in Sources */,
 				B4590DCD27A9B9C000E4876C /* GardenJSONDecoder.swift in Sources */,

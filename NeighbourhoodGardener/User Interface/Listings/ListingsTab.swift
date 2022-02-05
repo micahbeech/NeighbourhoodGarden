@@ -19,11 +19,8 @@ struct ListingsTab: View {
                 .padding(.vertical)
 
             TopTabView(labels: ["My Listings", "Favourites"]) {
-                List {
-                    Text("Listings")
-                        .listRowSeparator(.hidden)
-                }
-                .listStyle(.plain)
+                ListingsView()
+
                 List {
                     Text("Favourites")
                         .listRowSeparator(.hidden)
@@ -41,6 +38,7 @@ struct ListingsTab_Previews: PreviewProvider {
     static var previews: some View {
         PreviewGroup {
             ListingsTab()
+                .injectPreview(ListingsView.ViewModel.self)
         }
     }
 }

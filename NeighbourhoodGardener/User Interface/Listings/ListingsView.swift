@@ -20,11 +20,12 @@ extension ListingsView {
 
 struct ListingsView: View {
     typealias ViewModel = AnyViewModel<ViewState, Never>
-    @ObservedInject var viewModel: ViewModel
+    @ObservedInject private var viewModel: ViewModel
 
     var body: some View {
         List(viewModel.state.listings) { listing in
             ListingCard(viewModel: listing)
+                .padding(.top, .extraSmall)
                 .listRowSeparator(.hidden)
         }
         .listStyle(.plain)

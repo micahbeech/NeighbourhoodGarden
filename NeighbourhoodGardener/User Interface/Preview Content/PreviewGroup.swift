@@ -29,6 +29,13 @@ struct PreviewGroup<Content: View>: View {
                 .previewDevice(.init(stringLiteral: "iPhone 13"))
 
             content
+                .previewDisplayName("Dynamic Text")
+                .preferredColorScheme(.light)
+                .previewInterfaceOrientation(.portrait)
+                .environment(\.dynamicTypeSize, .xxxLarge)
+                .previewDevice(.init(stringLiteral: "iPhone 13"))
+
+            content
                 .previewDisplayName("Landscape")
                 .preferredColorScheme(.light)
                 .previewInterfaceOrientation(.landscapeRight)

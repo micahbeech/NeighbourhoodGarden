@@ -37,12 +37,10 @@ struct GardenPicker: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     .frame(width: geometry.size.width / CGFloat(labels.count))
-
-                    Spacer()
                 }
             }
         }
-        .frame(height: 40)
+        .frame(height: 32)
     }
 }
 

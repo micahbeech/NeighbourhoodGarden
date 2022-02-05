@@ -8,6 +8,7 @@
 import Foundation
 
 extension NumberFormatter {
+    // Assume dollars for now
     func string(from money: Money) -> String? {
         usesGroupingSeparator = true
         numberStyle = .currency
