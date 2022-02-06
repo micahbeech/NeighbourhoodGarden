@@ -53,7 +53,7 @@ struct PreviewGroup<Content: View>: View {
 struct PreviewGroup_Previews: PreviewProvider {
     static var previews: some View {
         PreviewGroup {
-            Text("Hello")
+            Text("Preview")
         }
     }
 }

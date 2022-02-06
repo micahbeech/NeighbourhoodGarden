@@ -28,6 +28,7 @@ struct ProduceCard: View {
         CardView {
             HStack(alignment: .top, spacing: .extraSmall) {
                 GardenImage(imageUrl: viewModel.imageUrl, size: 100)
+
                 ProductInfo(viewModel: .init(
                     name: viewModel.productName,
                     description: viewModel.description,
@@ -37,7 +38,6 @@ struct ProduceCard: View {
             }
             .padding(.screenEdge)
         }
-        .frame(height: 180)
     }
 }
 

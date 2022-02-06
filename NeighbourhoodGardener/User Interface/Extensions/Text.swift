@@ -55,6 +55,12 @@ struct TextStyle_Previews: PreviewProvider {
 
                 Text("I am tertiary text.")
                     .tertiaryStyle()
+
+                Text("I am a title.")
+                    .titleStyle()
+
+                Text("I am bold text.")
+                    .boldStyle()
             }
         }
     }

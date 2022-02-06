@@ -14,7 +14,6 @@ extension ListingCard {
         let productName: String
         let description: String
         let price: String
-        let seller: String
         let images: [String]
     }
 }
@@ -28,7 +27,7 @@ struct ListingCard: View {
         CardView {
             VStack(spacing: .zero) {
                 HorizontalList(viewModel.images, id: \.self) { url in
-                    GardenImage(imageUrl: url, size: nil)
+                    GardenImage(imageUrl: url, size: 120)
                         .padding(.leading, .screenEdge)
                         .if(url == viewModel.images.last) { $0.padding(.trailing, .screenEdge) }
                 }
@@ -41,12 +40,11 @@ struct ListingCard: View {
                     name: viewModel.productName,
                     description: viewModel.description,
                     price: viewModel.price,
-                    seller: viewModel.seller
+                    seller: nil
                 ))
                     .padding(.screenEdge)
             }
         }
-        .frame(height: 300)
     }
 }
 
@@ -65,7 +63,6 @@ extension ListingCard.ViewModel {
         productName: "Listing",
         description: "I am a listing",
         price: "$42.55",
-        seller: "Seller Person",
         images: ["testimage1", "testimage2", "testimage3", "testimage4"]
     )
 }

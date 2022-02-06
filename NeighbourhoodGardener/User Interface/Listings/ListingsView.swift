@@ -19,7 +19,7 @@ extension ListingsView {
 // MARK: View
 
 struct ListingsView: View {
-    typealias ViewModel = AnyViewModel<ViewState, Never>
+    typealias ViewModel = AnyViewModel<ViewState, Void>
     @ObservedInject private var viewModel: ViewModel
 
     var body: some View {
@@ -56,7 +56,6 @@ extension ListingsView.ViewState: StatePreviewable {
                 productName: name,
                 description: "I am a \(name)",
                 price: "$\(Int.random(in: 0...100)).\(Int.random(in: 0...9))\(Int.random(in: 0...9))",
-                seller: "All about \(name)",
                 images: Array(repeating: "testimage", count: Int.random(in: 1...5))
             )
         })

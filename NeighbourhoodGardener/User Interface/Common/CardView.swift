@@ -23,12 +23,13 @@ struct CardView<Content: View>: View {
             RoundedRectangle(cornerRadius: .cornerRadius)
                 .fill(cardColor)
                 .shadow(color: .gardenShadow, radius: 5, x: -3, y: 0)
+
             content
         }
     }
 }
 
-// MARK: CardView.cardColor
+// MARK: cardColor
 
 extension CardView {
     func cardColor(_ color: Color) -> some View {

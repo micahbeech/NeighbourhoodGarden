@@ -65,12 +65,15 @@ extension HorizontalList {
 struct HorizontalList_Previews: PreviewProvider {
     static var previews: some View {
         ContentPreview()
+            .previewLayout(.fixed(width: 300, height: 50))
         NonIdentifiablePreview()
+            .previewLayout(.fixed(width: 300, height: 50))
         IdentifiablePreview()
+            .previewLayout(.fixed(width: 300, height: 50))
     }
 }
 
-struct ContentPreview: View {
+private struct ContentPreview: View {
     var body: some View {
         HorizontalList {
             Text("First")
@@ -83,7 +86,7 @@ struct ContentPreview: View {
     }
 }
 
-struct NonIdentifiablePreview: View {
+private struct NonIdentifiablePreview: View {
     let data = ["First", "Second", "Third"]
 
     var body: some View {
@@ -93,7 +96,7 @@ struct NonIdentifiablePreview: View {
     }
 }
 
-struct IdentifiablePreview: View {
+private struct IdentifiablePreview: View {
     struct Data: Identifiable {
         let content: String
         let id = UUID()

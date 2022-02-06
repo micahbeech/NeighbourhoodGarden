@@ -20,7 +20,7 @@ extension HomeTab {
 // MARK: View
 
 struct HomeTab: View {
-    typealias ViewModel = AnyViewModel<ViewState, Never>
+    typealias ViewModel = AnyViewModel<ViewState, Void>
     @ObservedInject private var viewModel: ViewModel
 
     var body: some View {
@@ -32,7 +32,6 @@ struct HomeTab: View {
             List(viewModel.state.products) { product in
                 ProduceCard(viewModel: product)
                     .listRowSeparator(.hidden)
-                    .ignoresSafeArea()
             }
             .listStyle(.plain)
         }

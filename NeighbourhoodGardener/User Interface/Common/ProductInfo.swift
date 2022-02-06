@@ -14,7 +14,7 @@ extension ProductInfo {
         let name: String
         let description: String
         let price: String
-        let seller: String
+        let seller: String?
     }
 }
 
@@ -35,18 +35,21 @@ struct ProductInfo: View {
 
                 Text(viewModel.price)
                     .primaryStyle()
-                    .lineLimit(2)
-                    .multilineTextAlignment(.leading)
+                    .lineLimit(1)
             }
 
             Text(viewModel.description)
                 .secondaryStyle()
+                .lineLimit(2)
+                .multilineTextAlignment(.leading)
 
-            Spacer()
+            if let seller = viewModel.seller {
+                Spacer()
 
-            Text(L10n.Produce.soldBy(viewModel.seller))
-                .tertiaryStyle()
-                .lineLimit(1)
+                Text(L10n.Produce.soldBy(seller))
+                    .tertiaryStyle()
+                    .lineLimit(1)
+            }
         }
     }
 }

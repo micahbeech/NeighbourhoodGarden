@@ -12,11 +12,11 @@ import Swinject
 
 final class ListingsViewModel: ViewModel {
     typealias State = ListingsView.ViewState
-    typealias Event = Never
+    typealias Event = Void
 
     @Published var state = ListingsView.ViewState(listings: [])
 
-    private let numberFormatter = NumberFormatter()
+    private let numberFormatter = CurrencyFormatter()
     private let subscriberManager = SubscriberManager()
     private let productService: ProductService
 
@@ -38,7 +38,6 @@ extension ListingsViewModel {
                         productName: product.name,
                         description: product.description,
                         price: self?.numberFormatter.string(from: product.price) ?? "",
-                        seller: product.seller,
                         images: product.imageUrls
                     )
                 }

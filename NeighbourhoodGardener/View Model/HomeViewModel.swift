@@ -12,11 +12,11 @@ import Swinject
 
 final class HomeViewModel: ViewModel {
     typealias State = HomeTab.ViewState
-    typealias Event = Never
+    typealias Event = Void
 
     @Published var state = HomeTab.ViewState(title: L10n.Home.header, products: [])
 
-    private let numberFormatter = NumberFormatter()
+    private let numberFormatter = CurrencyFormatter()
     private let subscriberManager = SubscriberManager()
     private let productService: ProductService
 

@@ -17,17 +17,7 @@ final class GardenAssembler {
     var resolver: Resolver { assembler.resolver }
 
     init() {
-        assembler.apply(assembly: ResolverAssembly())
-
         assembler.apply(assemblies: ViewModelAssemblies)
         assembler.apply(assemblies: ServiceAssemblies)
-    }
-}
-
-// MARK: ResolverAssembly
-
-class ResolverAssembly: Assembly {
-    func assemble(container: Container) {
-        container.register(Resolver.self, factory: { $0 }).inObjectScope(.container)
     }
 }

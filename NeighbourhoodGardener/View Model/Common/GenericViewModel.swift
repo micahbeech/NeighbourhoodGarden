@@ -22,7 +22,7 @@ extension ViewModel {
     func eraseToAnyViewModel() -> AnyViewModel<State, Event> { AnyViewModel(self) }
 }
 
-extension ViewModel where Event == Never {
+extension ViewModel where Event == Void {
     func trigger(_ event: Event) {}
 }
 
