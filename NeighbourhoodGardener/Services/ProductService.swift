@@ -11,6 +11,7 @@ import Combine
 
 // MARK: ProductService
 
+// sourcery: AutoMockable
 protocol ProductService {
     func getProducts() -> AnyPublisher<[Product], Never>
 }

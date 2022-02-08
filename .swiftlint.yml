@@ -1,6 +1,1 @@
-included:
-  - NeighbourhoodGardener
-  - NeighbourhoodGardenerTests
-
-disabled_rules:
-  - large_tuple
+swiftlint.yml

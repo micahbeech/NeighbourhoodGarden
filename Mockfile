@@ -1,0 +1,15 @@
+sourceryCommand: null
+sourceryTemplate: null
+NeighbourhoodGardenerTests:
+  sources:
+    include:
+    - ./NeighbourhoodGardener
+  output: ./NeighbourhoodGardenerTests/Generated/Mock.generated.swift
+  targets:
+  - NeighbourhoodGardenerTests
+  testable:
+  - NeighbourhoodGardener
+  import:
+  - Combine
+  - Foundation
+  - Swinject

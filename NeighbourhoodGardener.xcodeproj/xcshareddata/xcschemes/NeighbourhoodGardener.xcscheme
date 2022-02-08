@@ -20,6 +20,20 @@
                ReferencedContainer = "container:NeighbourhoodGardener.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B47AC26E27A708BE00AF845B"
+               BuildableName = "NeighbourhoodGardenerTests.xctest"
+               BlueprintName = "NeighbourhoodGardenerTests"
+               ReferencedContainer = "container:NeighbourhoodGardener.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -35,16 +49,6 @@
                BlueprintIdentifier = "B47AC26E27A708BE00AF845B"
                BuildableName = "NeighbourhoodGardenerTests.xctest"
                BlueprintName = "NeighbourhoodGardenerTests"
-               ReferencedContainer = "container:NeighbourhoodGardener.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B47AC27827A708BE00AF845B"
-               BuildableName = "NeighbourhoodGardenerUITests.xctest"
-               BlueprintName = "NeighbourhoodGardenerUITests"
                ReferencedContainer = "container:NeighbourhoodGardener.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -1,0 +1,10 @@
+included:
+  - NeighbourhoodGardener
+  - NeighbourhoodGardenerTests
+
+excluded:
+  - NeighbourhoodGardenerTests/Generated/Mock.generated.swift
+
+disabled_rules:
+  - large_tuple
+  - identifier_name

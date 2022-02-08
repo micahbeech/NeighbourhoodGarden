@@ -19,11 +19,15 @@
 		B4590DD127AA2EA000E4876C /* View+if.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DD027AA2EA000E4876C /* View+if.swift */; };
 		B4590DD327AA3B1300E4876C /* TopTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DD227AA3B1300E4876C /* TopTabView.swift */; };
 		B4590DD527AA434400E4876C /* GardenPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4590DD427AA434400E4876C /* GardenPicker.swift */; };
+		B4594F5927B04B4500EC1728 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4594F5827B04B4500EC1728 /* Mock.generated.swift */; };
+		B4594F5F27B098B500EC1728 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = B4594F5C27B098B500EC1728 /* readme.md */; };
+		B4594F6027B098B500EC1728 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B4594F5D27B098B500EC1728 /* LICENSE */; };
+		B4594F6127B098B500EC1728 /* Mockfile in Resources */ = {isa = PBXBuildFile; fileRef = B4594F5E27B098B500EC1728 /* Mockfile */; };
 		B47AC26327A708BC00AF845B /* NeighbourhoodGardenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC26227A708BC00AF845B /* NeighbourhoodGardenerApp.swift */; };
 		B47AC26527A708BC00AF845B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC26427A708BC00AF845B /* MainView.swift */; };
 		B47AC26727A708BE00AF845B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47AC26627A708BE00AF845B /* Images.xcassets */; };
 		B47AC26A27A708BE00AF845B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47AC26927A708BE00AF845B /* Preview Assets.xcassets */; };
-		B47AC27427A708BE00AF845B /* NeighbourhoodGardenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC27327A708BE00AF845B /* NeighbourhoodGardenerTests.swift */; };
+		B47AC27427A708BE00AF845B /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC27327A708BE00AF845B /* HomeViewModelTests.swift */; };
 		B47AC27E27A708BE00AF845B /* NeighbourhoodGardenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC27D27A708BE00AF845B /* NeighbourhoodGardenerUITests.swift */; };
 		B47AC28027A708BE00AF845B /* NeighbourhoodGardenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC27F27A708BE00AF845B /* NeighbourhoodGardenerUITestsLaunchTests.swift */; };
 		B47AC29527A70ADC00AF845B /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC29427A70ADC00AF845B /* HomeTab.swift */; };
@@ -31,6 +35,12 @@
 		B47AC29927A70B1300AF845B /* AccountTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC29827A70B1300AF845B /* AccountTab.swift */; };
 		B47AC2AC27A738E400AF845B /* NeighbourhoodGardener.strings in Resources */ = {isa = PBXBuildFile; fileRef = B47AC2AE27A738E400AF845B /* NeighbourhoodGardener.strings */; };
 		B47AC2B227A739F400AF845B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AC2B027A739F400AF845B /* Strings.swift */; };
+		B482ABB127B1623000D6E8F8 /* SwiftyMocky in Frameworks */ = {isa = PBXBuildFile; productRef = B482ABB027B1623000D6E8F8 /* SwiftyMocky */; };
+		B482ABB327B168D700D6E8F8 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482ABB227B168D700D6E8F8 /* Money.swift */; };
+		B482ABB527B16F0900D6E8F8 /* XCTestCase+awaitPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482ABB427B16F0900D6E8F8 /* XCTestCase+awaitPublisher.swift */; };
+		B482ABBC27B1BC4F00D6E8F8 /* AwaitPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482ABBB27B1BC4F00D6E8F8 /* AwaitPublisherTests.swift */; };
+		B482ABC027B1E94700D6E8F8 /* ListingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482ABBF27B1E94700D6E8F8 /* ListingsViewModelTests.swift */; };
+		B482ABC327B1EBA800D6E8F8 /* RealProductServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482ABC227B1EBA800D6E8F8 /* RealProductServiceTests.swift */; };
 		B488DDD727AD86A300E0E722 /* View+Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488DDD627AD86A300E0E722 /* View+Inject.swift */; };
 		B48E7E5527A779A800ABFBCA /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E5427A779A800ABFBCA /* Text.swift */; };
 		B48E7E5727A77ACF00ABFBCA /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E5627A77ACF00ABFBCA /* Font.swift */; };
@@ -85,13 +95,18 @@
 		B4590DD027AA2EA000E4876C /* View+if.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+if.swift"; sourceTree = "<group>"; };
 		B4590DD227AA3B1300E4876C /* TopTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabView.swift; sourceTree = "<group>"; };
 		B4590DD427AA434400E4876C /* GardenPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenPicker.swift; sourceTree = "<group>"; };
+		B4594F4D27B045F300EC1728 /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
+		B4594F5827B04B4500EC1728 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		B4594F5C27B098B500EC1728 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
+		B4594F5D27B098B500EC1728 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		B4594F5E27B098B500EC1728 /* Mockfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mockfile; sourceTree = SOURCE_ROOT; };
 		B47AC25F27A708BC00AF845B /* NeighbourhoodGardener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeighbourhoodGardener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47AC26227A708BC00AF845B /* NeighbourhoodGardenerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighbourhoodGardenerApp.swift; sourceTree = "<group>"; };
 		B47AC26427A708BC00AF845B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B47AC26627A708BE00AF845B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B47AC26927A708BE00AF845B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B47AC26F27A708BE00AF845B /* NeighbourhoodGardenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeighbourhoodGardenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B47AC27327A708BE00AF845B /* NeighbourhoodGardenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighbourhoodGardenerTests.swift; sourceTree = "<group>"; };
+		B47AC27327A708BE00AF845B /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		B47AC27927A708BE00AF845B /* NeighbourhoodGardenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeighbourhoodGardenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47AC27D27A708BE00AF845B /* NeighbourhoodGardenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighbourhoodGardenerUITests.swift; sourceTree = "<group>"; };
 		B47AC27F27A708BE00AF845B /* NeighbourhoodGardenerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighbourhoodGardenerUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -100,6 +115,11 @@
 		B47AC29827A70B1300AF845B /* AccountTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTab.swift; sourceTree = "<group>"; };
 		B47AC2AD27A738E400AF845B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NeighbourhoodGardener.strings; sourceTree = "<group>"; };
 		B47AC2B027A739F400AF845B /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		B482ABB227B168D700D6E8F8 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		B482ABB427B16F0900D6E8F8 /* XCTestCase+awaitPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+awaitPublisher.swift"; sourceTree = "<group>"; };
+		B482ABBB27B1BC4F00D6E8F8 /* AwaitPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwaitPublisherTests.swift; sourceTree = "<group>"; };
+		B482ABBF27B1E94700D6E8F8 /* ListingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsViewModelTests.swift; sourceTree = "<group>"; };
+		B482ABC227B1EBA800D6E8F8 /* RealProductServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealProductServiceTests.swift; sourceTree = "<group>"; };
 		B488DDD627AD86A300E0E722 /* View+Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Inject.swift"; sourceTree = "<group>"; };
 		B48E7E5427A779A800ABFBCA /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		B48E7E5627A77ACF00ABFBCA /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -138,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B482ABB127B1623000D6E8F8 /* SwiftyMocky in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +187,11 @@
 				B47AC27227A708BE00AF845B /* NeighbourhoodGardenerTests */,
 				B47AC27C27A708BE00AF845B /* NeighbourhoodGardenerUITests */,
 				B4F738A727A7474C009C9B11 /* SwiftgenTemplates */,
+				B4594F5E27B098B500EC1728 /* Mockfile */,
 				B4F738A327A743FE009C9B11 /* swiftgen.yml */,
+				B4594F4D27B045F300EC1728 /* swiftlint.yml */,
+				B4594F5D27B098B500EC1728 /* LICENSE */,
+				B4594F5C27B098B500EC1728 /* readme.md */,
 				B47AC26027A708BC00AF845B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -209,7 +234,10 @@
 		B47AC27227A708BE00AF845B /* NeighbourhoodGardenerTests */ = {
 			isa = PBXGroup;
 			children = (
-				B47AC27327A708BE00AF845B /* NeighbourhoodGardenerTests.swift */,
+				B482ABC127B1E9F200D6E8F8 /* Service Tests */,
+				B482ABBA27B1A8A700D6E8F8 /* ViewModel Tests */,
+				B482ABB627B1700D00D6E8F8 /* Extensions */,
+				B482ABB727B1701D00D6E8F8 /* Generated */,
 			);
 			path = NeighbourhoodGardenerTests;
 			sourceTree = "<group>";
@@ -305,6 +333,41 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		B482ABB627B1700D00D6E8F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B482ABB227B168D700D6E8F8 /* Money.swift */,
+				B482ABB427B16F0900D6E8F8 /* XCTestCase+awaitPublisher.swift */,
+				B482ABBB27B1BC4F00D6E8F8 /* AwaitPublisherTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B482ABB727B1701D00D6E8F8 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				B4594F5827B04B4500EC1728 /* Mock.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		B482ABBA27B1A8A700D6E8F8 /* ViewModel Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B47AC27327A708BE00AF845B /* HomeViewModelTests.swift */,
+				B482ABBF27B1E94700D6E8F8 /* ListingsViewModelTests.swift */,
+			);
+			path = "ViewModel Tests";
+			sourceTree = "<group>";
+		};
+		B482ABC127B1E9F200D6E8F8 /* Service Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B482ABC227B1EBA800D6E8F8 /* RealProductServiceTests.swift */,
+			);
+			path = "Service Tests";
+			sourceTree = "<group>";
+		};
 		B4C453BE27A8A4D600C564D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,9 +451,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B47AC28627A708BE00AF845B /* Build configuration list for PBXNativeTarget "NeighbourhoodGardenerTests" */;
 			buildPhases = (
+				B4594F5B27B04E0B00EC1728 /* SwiftGen */,
 				B47AC26B27A708BE00AF845B /* Sources */,
 				B47AC26C27A708BE00AF845B /* Frameworks */,
 				B47AC26D27A708BE00AF845B /* Resources */,
+				B4594F5A27B04DF700EC1728 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -398,6 +463,9 @@
 				B47AC27127A708BE00AF845B /* PBXTargetDependency */,
 			);
 			name = NeighbourhoodGardenerTests;
+			packageProductDependencies = (
+				B482ABB027B1623000D6E8F8 /* SwiftyMocky */,
+			);
 			productName = NeighbourhoodGardenerTests;
 			productReference = B47AC26F27A708BE00AF845B /* NeighbourhoodGardenerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -454,6 +522,7 @@
 			mainGroup = B47AC25627A708BB00AF845B;
 			packageReferences = (
 				B4F7389827A73D86009C9B11 /* XCRemoteSwiftPackageReference "Swinject" */,
+				B482ABAF27B1623000D6E8F8 /* XCRemoteSwiftPackageReference "SwiftyMocky" */,
 			);
 			productRefGroup = B47AC26027A708BC00AF845B /* Products */;
 			projectDirPath = "";
@@ -482,6 +551,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4594F6127B098B500EC1728 /* Mockfile in Resources */,
+				B4594F6027B098B500EC1728 /* LICENSE in Resources */,
+				B4594F5F27B098B500EC1728 /* readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +567,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B4594F5A27B04DF700EC1728 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B4594F5B27B04E0B00EC1728 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed. Download from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
 		B4F7389727A73B47009C9B11 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -583,7 +691,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B47AC27427A708BE00AF845B /* NeighbourhoodGardenerTests.swift in Sources */,
+				B482ABC327B1EBA800D6E8F8 /* RealProductServiceTests.swift in Sources */,
+				B482ABB527B16F0900D6E8F8 /* XCTestCase+awaitPublisher.swift in Sources */,
+				B482ABBC27B1BC4F00D6E8F8 /* AwaitPublisherTests.swift in Sources */,
+				B482ABB327B168D700D6E8F8 /* Money.swift in Sources */,
+				B482ABC027B1E94700D6E8F8 /* ListingsViewModelTests.swift in Sources */,
+				B4594F5927B04B4500EC1728 /* Mock.generated.swift in Sources */,
+				B47AC27427A708BE00AF845B /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +774,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -721,6 +836,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -749,6 +865,7 @@
 				DEVELOPMENT_ASSET_PATHS = "NeighbourhoodGardener/User\\ Interface/Preview\\ Content";
 				DEVELOPMENT_TEAM = 99QP45942G;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -780,6 +897,7 @@
 				DEVELOPMENT_ASSET_PATHS = "NeighbourhoodGardener/User\\ Interface/Preview\\ Content";
 				DEVELOPMENT_TEAM = 99QP45942G;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -809,6 +927,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 99QP45942G;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -834,6 +953,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 99QP45942G;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -939,6 +1059,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B482ABAF27B1623000D6E8F8 /* XCRemoteSwiftPackageReference "SwiftyMocky" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MakeAWishFoundation/SwiftyMocky";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		B4F7389827A73D86009C9B11 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
@@ -950,6 +1078,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B482ABB027B1623000D6E8F8 /* SwiftyMocky */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B482ABAF27B1623000D6E8F8 /* XCRemoteSwiftPackageReference "SwiftyMocky" */;
+			productName = SwiftyMocky;
+		};
 		B4F7389927A73D86009C9B11 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B4F7389827A73D86009C9B11 /* XCRemoteSwiftPackageReference "Swinject" */;
