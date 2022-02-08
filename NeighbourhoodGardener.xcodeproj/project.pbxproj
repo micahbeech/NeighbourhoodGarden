@@ -63,6 +63,7 @@
 		B4F738A627A744E9009C9B11 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F738A527A744E9009C9B11 /* Colors.xcassets */; };
 		B4F738B227A75931009C9B11 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F738B027A75929009C9B11 /* Images.swift */; };
 		B4F738B327A75931009C9B11 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F738B127A75929009C9B11 /* Colors.swift */; };
+		B4FA0F5D27B214E600609B12 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FA0F5C27B214E600609B12 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		B4F738AA27A74829009C9B11 /* swift5-swiftui */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift5-swiftui"; sourceTree = "<group>"; };
 		B4F738B027A75929009C9B11 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		B4F738B127A75929009C9B11 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B4FA0F5C27B214E600609B12 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +386,7 @@
 				B4C453C627A8AA3000C564D5 /* CurrencyFormatter.swift */,
 				B4590DCC27A9B9C000E4876C /* GardenJSONDecoder.swift */,
 				B4B1C72227AEF8AC00C9EBE9 /* SubscriberManager.swift */,
+				B4FA0F5C27B214E600609B12 /* Currency.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 				B4B1C72327AEF8AC00C9EBE9 /* SubscriberManager.swift in Sources */,
 				B4C453B927A88FC900C564D5 /* GenericViewModel.swift in Sources */,
 				B4590DD327AA3B1300E4876C /* TopTabView.swift in Sources */,
+				B4FA0F5D27B214E600609B12 /* Currency.swift in Sources */,
 				B4590DCD27A9B9C000E4876C /* GardenJSONDecoder.swift in Sources */,
 				B4590DCF27AA2DE000E4876C /* GardenDivider.swift in Sources */,
 				B42FEFD627AC3F1900A90639 /* ListingCard.swift in Sources */,

@@ -9,5 +9,5 @@ import Foundation
 
 struct Money: Codable, Equatable {
     let amountMinor: Int
-    let currency: String
+    let currency: Currency
 }
