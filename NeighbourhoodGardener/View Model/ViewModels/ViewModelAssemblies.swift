@@ -8,9 +8,8 @@
 import Foundation
 import Swinject
 
-// swiftlint:disable identifier_name
 var ViewModelAssemblies: [Assembly] = [
     HomeViewModelAssembly(),
-    ListingsViewModelAssembly()
+    ListingsViewModelAssembly(),
+    AddListingViewModelAssembly()
 ]
-// swiftlint:enable identifier_name

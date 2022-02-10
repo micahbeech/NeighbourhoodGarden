@@ -23,4 +23,11 @@ final class CurrencyFormatter: NumberFormatter {
         let amount = Double(money.amountMinor) / 100
         return string(from: amount as NSNumber)
     }
+
+    func money(from string: String, currency: Currency) -> Money? {
+        // Assume dollars for now, fix to support other locales
+        guard let dollars = number(from: string) else { return nil }
+        let cents = dollars.doubleValue * 100
+        return Money(amountMinor: Int(cents), currency: currency)
+    }
 }

@@ -19,5 +19,6 @@ final class GardenAssembler {
     init() {
         assembler.apply(assemblies: ViewModelAssemblies)
         assembler.apply(assemblies: ServiceAssemblies)
+        assembler.apply(assemblies: ManagerAssemblies)
     }
 }

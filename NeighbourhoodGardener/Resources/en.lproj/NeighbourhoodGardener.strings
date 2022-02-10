@@ -15,6 +15,15 @@
 /// Title of the user's account tab
 "TAB.ACCOUNT" = "Account";
 
+// MARK: Alert
+
+/// Title of the message presented to the user when there is an error
+"ALERT.ERROR.TITLE" = "Something went wrong";
+/// Message presented to the user when there is an error
+"ALERT.ERROR.MESSAGE" = "Please contact us if the problem persists.";
+/// Text on the button the user clicks to dismiss the error message
+"ALERT.ERROR.CONFIRMATION" = "OK";
+
 // MARK: Produce
 
 // Indicates the name of the seller of a product.
@@ -24,3 +33,8 @@
 
 /// App title
 "HOME.HEADER" = "My Neighbourhood Garden";
+
+// MARK: Listings
+
+/// Prompt text to create a new product listing
+"LISTING.NEW" = "New Listing";

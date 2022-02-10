@@ -11,9 +11,25 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
+  internal enum Alert {
+    internal enum Error {
+      /// OK
+      internal static let confirmation = L10n.tr("NeighbourhoodGardener", "ALERT.ERROR.CONFIRMATION")
+      /// Please contact us if the problem persists.
+      internal static let message = L10n.tr("NeighbourhoodGardener", "ALERT.ERROR.MESSAGE")
+      /// Something went wrong
+      internal static let title = L10n.tr("NeighbourhoodGardener", "ALERT.ERROR.TITLE")
+    }
+  }
+
   internal enum Home {
     /// My Neighbourhood Garden
     internal static let header = L10n.tr("NeighbourhoodGardener", "HOME.HEADER")
+  }
+
+  internal enum Listing {
+    /// New Listing
+    internal static let new = L10n.tr("NeighbourhoodGardener", "LISTING.NEW")
   }
 
   internal enum Produce {

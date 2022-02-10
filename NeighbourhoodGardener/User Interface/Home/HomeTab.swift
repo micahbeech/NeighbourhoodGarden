@@ -24,17 +24,17 @@ struct HomeTab: View {
     @ObservedInject private var viewModel: ViewModel
 
     var body: some View {
-        VStack(alignment: .leading, spacing: .small) {
+        List {
             Text(viewModel.state.title)
                 .titleStyle()
-                .padding([.horizontal, .top], .screenEdge)
+                .listRowSeparator(.hidden)
 
-            List(viewModel.state.products) { product in
+            ForEach(viewModel.state.products) { product in
                 ProduceCard(viewModel: product)
                     .listRowSeparator(.hidden)
             }
-            .listStyle(.plain)
         }
+        .listStyle(.plain)
     }
 }
 

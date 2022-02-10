@@ -21,12 +21,19 @@ extension ListingsView {
 struct ListingsView: View {
     typealias ViewModel = AnyViewModel<ViewState, Void>
     @ObservedInject private var viewModel: ViewModel
+    @EnvironmentObject private var sheetManager: SheetManager
 
     var body: some View {
-        List(viewModel.state.listings) { listing in
-            ListingCard(viewModel: listing)
+        List {
+            AddListingCard(onTap: { sheetManager.activeSheet = .addListing })
                 .padding(.top, .extraSmall)
                 .listRowSeparator(.hidden)
+
+            ForEach(viewModel.state.listings) { listing in
+                ListingCard(viewModel: listing)
+                    .padding(.top, .extraSmall)
+                    .listRowSeparator(.hidden)
+            }
         }
         .listStyle(.plain)
     }

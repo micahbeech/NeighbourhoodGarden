@@ -14,16 +14,24 @@ import Combine
 // sourcery: AutoMockable
 protocol ProductService {
     func getProducts() -> AnyPublisher<[Product], Never>
+    func createProduct(product: Product) -> AnyPublisher<[Product], Never>
 }
 
 // MARK: RealProductService
 
 final class RealProductService: ProductService {
+    private let gardenAPI: GardenAPI
+
+    init(gardenAPI: GardenAPI) {
+        self.gardenAPI = gardenAPI
+    }
+
     func getProducts() -> AnyPublisher<[Product], Never> {
-        // FIX ME: Temporary Implementation
-        let data = PreviewData.products.data.data
-        let products = GardenJSONDecoder().decodeOrNull([Product].self, from: data) ?? []
-        return Just(products).eraseToAnyPublisher()
+        gardenAPI.getResource([Product].self, path: "/products")
+    }
+
+    func createProduct(product: Product) -> AnyPublisher<[Product], Never> {
+        gardenAPI.createResource(product, [Product].self, path: "/products")
     }
 }
 
@@ -31,8 +39,9 @@ final class RealProductService: ProductService {
 
 final class RealProductServiceAssembly: Assembly {
     func assemble(container: Container) {
-        container.register(ProductService.self) { _ in
-            RealProductService()
+        container.register(ProductService.self) { resolver in
+            let gardenApi = resolver.resolve(GardenAPI.self)!
+            return RealProductService(gardenAPI: gardenApi)
         }
     }
 }

@@ -8,8 +8,7 @@
 import Foundation
 import Swinject
 
-// swiftlint:disable identifier_name
 var ServiceAssemblies: [Assembly] = [
-    RealProductServiceAssembly()
+    RealProductServiceAssembly(),
+    RealGardenAPIAssembly()
 ]
-// swiftlint:enable identifier_name
